@@ -1,4 +1,5 @@
-<?php include 'includes/header.php'?>
+<?php include 'includes/config.php'?>
+<?php get_header()?>
 <?php
     
     //client's email. my email for testing
@@ -106,7 +107,7 @@ if(isset($_POST["FirstName"])){//show data
 ?>
 <?php 
 
-include 'includes/footer.php';
+get_footer();
 
 function clean_Post($key){
     

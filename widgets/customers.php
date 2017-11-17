@@ -1,4 +1,5 @@
-<?php include 'includes/header.php' ?>
+<?php include 'includes/config.php';?>
+<?php get_header()?>
   <h3>Customers</h3>
     <?php
         $sql = "select * from test_Customers";
@@ -23,4 +24,4 @@
         @mysqli_close($iConn); #close connection to database
 
     ?>
-<?php include 'includes/footer.php' ?>
+<?php get_footer()?>

@@ -7,7 +7,8 @@
         $day = date('l');
     }
 ?>
-<?php include 'includes/header.php' ?>
+<?php include 'includes/config.php';?>
+<?php get_header()?>
   <h3>Daily</h3>
     <p>Current contents of the variable day: <?=$day?></p>
     <p><a href="?day=Monday's Special is <b>Cappuccino</b>">Monday</a></p>
@@ -17,4 +18,4 @@
     <p><a href="?day=Friday's Special is <b>Chai Tea Latte</b>">Friday</a></p>
     <p><a href="?day=Saturday's Special is <b>Pumpkin Spice Latte</b>">Saturday</a></p>
     <p><a href="?day=Sunday's Special is <b>Salted Caramel Mocha</b>">Sunday</a></p>
-<?php include 'includes/footer.php' ?>
+<?php get_footer()?>

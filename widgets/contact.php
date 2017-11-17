@@ -1,4 +1,5 @@
-<?php include 'includes/header.php'?>
+<?php include 'includes/config.php'?>
+<?php get_header()?>
 <?php
     
     $to = 'gloriaxinhui@gmail.com';
@@ -78,7 +79,7 @@ if(isset($_POST["FirstName"])){//show data
 ?>
 <?php 
 
-include 'includes/footer.php';
+get_footer();
 
 function clean_post($key)
 {
