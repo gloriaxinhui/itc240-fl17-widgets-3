@@ -1,7 +1,21 @@
-<?php include 'includes/config.php'?>
-<?php get_header()?>
-<?php
-    
+<?php 
+
+include 'includes/config.php';
+get_header();
+
+    $heros[] = '<img src="images/coulson.png" />';
+    $heros[] = '<img src="images/fury.png" />';
+    $heros[] = '<img src="images/hulk.png" />';
+    $heros[] = '<img src="images/thor.png" />';
+    $heros[] = '<img src="images/black-widow.png" />';
+    $heros[] = '<img src="images/captain-america.png" />';
+    $heros[] = '<img src="images/machine.png" />';
+    $heros[] = '<img src="images/iron-man.png" />';
+    $heros[] = '<img src="images/loki.png" />';
+    $heros[] = '<img src="images/giant.png" />';
+    $heros[] = '<img src="images/hawkeye.png" />';
+    $config->hero = randomize($heros);
+
     //client's email. my email for testing
     $to = 'gloriaxinhui@gmail.com';
     
@@ -103,9 +117,6 @@ if(isset($_POST["FirstName"])){//show data
         </form>
     ';
 }
-
-?>
-<?php 
 
 get_footer();
 
