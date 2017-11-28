@@ -52,3 +52,21 @@ function get_footer()
     global $config;
     get_header();
 }#get_footer() is same function, run second time with footer file
+
+/**
+ * Wrapper function for processing data pulled from db
+ *
+ * Forward slashes are added to MySQL data upon entry to prevent SQL errors.  
+ * Using our dbOut() function allows us to encapsulate the most common functions for removing  
+ * slashes with the PHP stripslashes() function, plus the trim() function to remove spaces.
+ *
+ * @param string $str data as pulled from MySQL
+ * @return $str data cleaned of slashes, spaces around string, etc.
+ * @see dbIn()
+ * @todo none
+ */
+function dbOut($str)
+{
+	if($str!=""){$str = stripslashes(trim($str));}//strip out slashes entered for SQL safety
+	return $str;
+} #End dbOut()

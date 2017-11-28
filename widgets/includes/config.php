@@ -35,7 +35,8 @@ $config->theme = 'BusinessCasual';//sub folder to themes
 
 //web page defaults
 $config->title = THIS_PAGE;
-$config->banner = 'My Cool Banner';
+$config->banner = 'Widgets';
+$config->loadhead = ''; //place items in <head> element
 
 switch(THIS_PAGE){
         
@@ -62,6 +63,11 @@ switch(THIS_PAGE){
     case 'daily.php': 
         $config->title = "Widgets Daily";
         $config->banner = "Widgets Daily";
+    break;
+        
+    case 'coffee_list.php': 
+        $config->title = "Widgets Coffee";
+        $config->banner = "Widgets Coffee";
     break;
 }
 
