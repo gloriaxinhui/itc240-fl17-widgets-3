@@ -37,6 +37,8 @@ $config->theme = 'BusinessCasual';//sub folder to themes
 $config->title = THIS_PAGE;
 $config->banner = 'Widgets';
 $config->loadhead = ''; //place items in <head> element
+$config->loadfoot = ''; //place to store items just before body tag
+$config->hero = ''; // will store random superhero icon
 
 switch(THIS_PAGE){
         
