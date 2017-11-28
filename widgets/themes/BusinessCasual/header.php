@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template -->
     <link href="<?=$config->theme_virtual?>css/business-casual.css" rel="stylesheet">
+    
+    <?=$config->loadhead?>
+    
 
   </head>
 
@@ -37,9 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="customers.php">Customers</a>
@@ -48,11 +49,14 @@
               <a class="nav-link text-uppercase text-expanded" href="appointment.php">Appointment</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
+              <a class="nav-link text-uppercase text-expanded" href="daily.php">Daily</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="daily.php">Daily</a>
-            </li>  
+              <a class="nav-link text-uppercase text-expanded" href="coffee_list.php">Coffee</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

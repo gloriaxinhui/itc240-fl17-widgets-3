@@ -69,6 +69,7 @@ function dbOut($str)
 {
 	if($str!=""){$str = stripslashes(trim($str));}//strip out slashes entered for SQL safety
 	return $str;
+<<<<<<< HEAD
 } #End dbOut()
 
 /**
@@ -128,3 +129,6 @@ function rotate ($arr)
 		return $arr;
 	}
 }#end rotate
+=======
+} #End dbOut()
+>>>>>>> 52f3bdc8cc861802635d0870a198f9f363e6b56b
